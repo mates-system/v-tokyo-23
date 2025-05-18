@@ -8,19 +8,34 @@ importers:
 
   .:
     dependencies:
+      '@iconify-json/devicon':
+        specifier: ^1.2.25
+        version: 1.2.25
+      '@iconify-json/logos':
+        specifier: ^1.2.4
+        version: 1.2.4
+      '@iconify-json/mdi':
+        specifier: ^1.2.3
+        version: 1.2.3
       '@slidev/cli':
         specifier: ^51.6.2
-        version: 51.6.2(@babel/parser@7.27.2)(@nuxt/kit@3.17.3)(@types/markdown-it@14.1.2)(@types/node@22.15.18)(@vue/compiler-sfc@3.5.14)(markdown-it-async@2.2.0)(postcss@8.5.3)
-      '@slidev/theme-default':
-        specifier: latest
-        version: 0.25.0
-      '@slidev/theme-seriph':
-        specifier: latest
-        version: 0.25.0
+        version: 51.6.2(@babel/parser@7.27.2)(@nuxt/kit@3.17.3)(@types/markdown-it@14.1.2)(@types/node@22.15.18)(@vue/compiler-sfc@3.5.14)(markdown-it-async@2.2.0)(playwright-chromium@1.52.0)(postcss@8.5.3)
+      add:
+        specifier: ^2.0.6
+        version: 2.0.6
+      js-confetti:
+        specifier: ^0.12.0
+        version: 0.12.0
+      pnpm:
+        specifier: ^10.11.1
+        version: 10.11.1
       vue:
         specifier: ^3.5.14
         version: 3.5.14(typescript@5.8.3)
     devDependencies:
+      playwright-chromium:
+        specifier: ^1.52.0
+        version: 1.52.0
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
@@ -343,6 +358,15 @@ packages:
   '@iconify-json/carbon@1.2.8':
     resolution: {integrity: sha512-6xh4YiFBz6qoSnB3XMe23WvjTJroDFXB17J1MbiT7nATFe+70+em1acRXr8hgP/gYpwFMHFc4IvjA/IPTPnTzg==}
 
+  '@iconify-json/devicon@1.2.25':
+    resolution: {integrity: sha512-AdiZZ6oF1jLXPdjLMlNVpNZ2Wun7DfWtd7Vg/+QnGIP18Rx6GAoPwePJuno0uiDEuZ7eGII7Du0HTC0Zdnu0XA==}
+
+  '@iconify-json/logos@1.2.4':
+    resolution: {integrity: sha512-XC4If5D/hbaZvUkTV8iaZuGlQCyG6CNOlaAaJaGa13V5QMYwYjgtKk3vPP8wz3wtTVNVEVk3LRx1fOJz+YnSMw==}
+
+  '@iconify-json/mdi@1.2.3':
+    resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
+
   '@iconify-json/ph@1.2.2':
     resolution: {integrity: sha512-PgkEZNtqa8hBGjHXQa4pMwZa93hmfu8FUSjs/nv4oUU6yLsgv+gh9nu28Kqi8Fz9CCVu4hj1MZs9/60J57IzFw==}
 
@@ -591,14 +615,6 @@ packages:
 
   '@slidev/rough-notation@0.1.0':
     resolution: {integrity: sha512-a/CbVmjuoO3E4JbUr2HOTsXndbcrdLWOM+ajbSQIY3gmLFzhjeXHGksGcp1NZ08pJjLZyTCxfz1C7v/ltJqycA==}
-
-  '@slidev/theme-default@0.25.0':
-    resolution: {integrity: sha512-iWvthH1Ny+i6gTwRnEeeU+EiqsHC56UdEO45bqLSNmymRAOWkKUJ/M0o7iahLzHSXsiPu71B7C715WxqjXk2hw==}
-    engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
-
-  '@slidev/theme-seriph@0.25.0':
-    resolution: {integrity: sha512-PnFQbn4I70+/cVie5iAr0Im6sYvnwjkO7Yj5KonTyJZFFJFytckLTrD3ijft/J4cRnz7OmSzTyQKNX1FN/x0YQ==}
-    engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
 
   '@slidev/types@0.47.5':
     resolution: {integrity: sha512-X67V4cCgM0Sz50bP8GbVzmiL8DHC2IXvdKcsN7DlxHyf+/T4d9GveeGukwha5Fx3MuYeGZWKag7TFL2ZY4w54A==}
@@ -961,6 +977,9 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
+  add@2.0.6:
+    resolution: {integrity: sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==}
+
   alien-signals@1.0.13:
     resolution: {integrity: sha512-OGj9yyTnJEttvzhTUWuscOvtqxq5vrhF7vL9oS0xJ2mK0ItPYP1/y+vCFebfxoEyAz0++1AIwJ5CMr+Fk3nDmg==}
 
@@ -1081,9 +1100,6 @@ packages:
   clone-regexp@3.0.0:
     resolution: {integrity: sha512-ujdnoq2Kxb8s3ItNBtnYeXdm07FcU0u8ARAT1lQ2YdMwQC+cdiXX8KoqMVuglztILivceTtp4ivqGSmEmhBUJw==}
     engines: {node: '>=12'}
-
-  codemirror-theme-vars@0.1.2:
-    resolution: {integrity: sha512-WTau8X2q58b0SOAY9DO+iQVw8JKVEgyQIqArp2D732tcc+pobbMta3bnVMdQdmgwuvNrOFFr6HoxPRoQOgooFA==}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -1709,6 +1725,9 @@ packages:
     resolution: {integrity: sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A==}
     hasBin: true
 
+  js-confetti@0.12.0:
+    resolution: {integrity: sha512-1R0Akxn3Zn82pMqW65N1V2NwKkZJ75bvBN/VAb36Ya0YHwbaSiAJZVRr/19HBxH/O8x2x01UFAbYI18VqlDN6g==}
+
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -2087,6 +2106,21 @@ packages:
   plantuml-encoder@1.4.0:
     resolution: {integrity: sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g==}
 
+  playwright-chromium@1.52.0:
+    resolution: {integrity: sha512-ZTpzBzRFFRglyqRnAqdK5mFaw1P41qe8V2zSR+fA0eKPgGEEaH7r91ejXKijs3WhReatRcatHQe3ndMBMN1PLA==}
+    engines: {node: '>=18'}
+    hasBin: true
+
+  playwright-core@1.52.0:
+    resolution: {integrity: sha512-l2osTgLXSMeuLZOML9qYODUQoPPnUsKsb5/P6LJ2e6uPKXUdPK5WYhN4z03G+YNbWmGDY4YENauNu4ZKczreHg==}
+    engines: {node: '>=18'}
+    hasBin: true
+
+  pnpm@10.11.1:
+    resolution: {integrity: sha512-5Rm592OYadyNXDxd/vc7PwkQlLCgBtcxc1PHKxJOgOGv1ClzLihwWta/oe6HnB/ORsEozOvTGSEB9D3WfGZ5Eg==}
+    engines: {node: '>=18.12'}
+    hasBin: true
+
   points-on-curve@0.2.0:
     resolution: {integrity: sha512-0mYKnYYe9ZcqMCWhUjItv/oHjvgEsfKvnUTg8sAtnHr3GVy7rGkXCb6d5cSyqrWqL4k81b9CPg3urd+T7aop3A==}
 
@@ -2122,9 +2156,6 @@ packages:
     resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
     engines: {node: '>=14'}
     hasBin: true
-
-  prism-theme-vars@0.2.5:
-    resolution: {integrity: sha512-/D8gBTScYzi9afwE6v3TC1U/1YFZ6k+ly17mtVRdLpGy7E79YjJJWkXFgUDHJ2gDksV/ZnXF7ydJ4TvoDm2z/Q==}
 
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
@@ -2979,6 +3010,18 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
+  '@iconify-json/devicon@1.2.25':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/logos@1.2.4':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/mdi@1.2.3':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/ph@1.2.2':
     dependencies:
       '@iconify/types': 2.0.0
@@ -3233,7 +3276,7 @@ snapshots:
 
   '@sindresorhus/is@5.6.0': {}
 
-  '@slidev/cli@51.6.2(@babel/parser@7.27.2)(@nuxt/kit@3.17.3)(@types/markdown-it@14.1.2)(@types/node@22.15.18)(@vue/compiler-sfc@3.5.14)(markdown-it-async@2.2.0)(postcss@8.5.3)':
+  '@slidev/cli@51.6.2(@babel/parser@7.27.2)(@nuxt/kit@3.17.3)(@types/markdown-it@14.1.2)(@types/node@22.15.18)(@vue/compiler-sfc@3.5.14)(markdown-it-async@2.2.0)(playwright-chromium@1.52.0)(postcss@8.5.3)':
     dependencies:
       '@antfu/ni': 24.4.0
       '@antfu/utils': 9.2.0
@@ -3305,6 +3348,8 @@ snapshots:
       vue: 3.5.14(typescript@5.8.3)
       yaml: 2.8.0
       yargs: 17.7.2
+    optionalDependencies:
+      playwright-chromium: 1.52.0
     transitivePeerDependencies:
       - '@babel/parser'
       - '@nuxt/kit'
@@ -3414,18 +3459,6 @@ snapshots:
   '@slidev/rough-notation@0.1.0':
     dependencies:
       roughjs: 4.6.6
-
-  '@slidev/theme-default@0.25.0':
-    dependencies:
-      '@slidev/types': 0.47.5
-      codemirror-theme-vars: 0.1.2
-      prism-theme-vars: 0.2.5
-
-  '@slidev/theme-seriph@0.25.0':
-    dependencies:
-      '@slidev/types': 0.47.5
-      codemirror-theme-vars: 0.1.2
-      prism-theme-vars: 0.2.5
 
   '@slidev/types@0.47.5': {}
 
@@ -3955,6 +3988,8 @@ snapshots:
 
   acorn@8.14.1: {}
 
+  add@2.0.6: {}
+
   alien-signals@1.0.13: {}
 
   ansi-regex@5.0.1: {}
@@ -4090,8 +4125,6 @@ snapshots:
   clone-regexp@3.0.0:
     dependencies:
       is-regexp: 3.1.0
-
-  codemirror-theme-vars@0.1.2: {}
 
   color-convert@2.0.1:
     dependencies:
@@ -4714,6 +4747,8 @@ snapshots:
 
   jiti@2.4.2: {}
 
+  js-confetti@0.12.0: {}
+
   js-tokens@4.0.0: {}
 
   js-tokens@9.0.1:
@@ -5244,6 +5279,14 @@ snapshots:
 
   plantuml-encoder@1.4.0: {}
 
+  playwright-chromium@1.52.0:
+    dependencies:
+      playwright-core: 1.52.0
+
+  playwright-core@1.52.0: {}
+
+  pnpm@10.11.1: {}
+
   points-on-curve@0.2.0: {}
 
   points-on-path@0.2.1:
@@ -5287,8 +5330,6 @@ snapshots:
       prettier: 3.5.3
 
   prettier@3.5.3: {}
-
-  prism-theme-vars@0.2.5: {}
 
   process-nextick-args@2.0.1: {}
 
