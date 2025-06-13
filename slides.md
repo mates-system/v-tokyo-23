@@ -31,9 +31,7 @@ h1 {
   font-weight: 1000;
   line-height: 1.25;
 
-  span {
-    color: white;
-  }
+  span { color: white; }
 
   .accent {
     color: color-mix(in srgb, var(--slidev-theme-primary), black 10%);
@@ -66,7 +64,12 @@ transition: slide-up
 
 ---
 
-<img src="/mates-on-japanese-companies-using-vuejs.png" alt="[https://github.com/chibivue-land/japanese-companies-using-vuejs に株式会社メイツが載っているスクショ]" class="flex items-center mx-auto screen-shot-embed" />
+<img
+  src="/mates-on-japanese-companies-using-vuejs.png"
+  alt="[https://github.com/chibivue-land/japanese-companies-using-vuejs に株式会社メイツが載っているスクショ]"
+  class="flex items-center mx-auto screen-shot-embed"
+  v-click
+/>
 
 <div
   class="animated-ellipse"
@@ -375,8 +378,6 @@ transition: slide-up
 </div>
 
 ---
-transition: slide-left
----
 
 <h1 class="text-7xl mb-16">他にも...</h1>
 
@@ -462,15 +463,6 @@ p.emoji {
   </div>
 </div>
 
-<div v-if="$slidev.nav.clicks === 3" class="overlay">
-  <img
-    src="/csv-question-data.png"
-    alt="CSV の問題データ"
-    class="screen-shot-embed"
-  />
-</div>
-
-<div style="display: none;" v-click />
 <div style="display: none;" v-click />
 <div style="display: none;" v-click />
 
@@ -518,8 +510,6 @@ p.emoji {
       line-height: 1.5;
     }
   }
-
-  img { width: 94%; display: grid; align-self: center; }
 }
 
 .hidden { display: none; }
@@ -612,7 +602,6 @@ transition: slide-up
 
 ---
 layout: center
-transition: slide-left
 ---
 
 <div class="grid gap-8 text-7xl">
@@ -1084,10 +1073,7 @@ interface RenderOptions {
 <div v-click style="display: none;" />
 
 <style scoped>
-.overlay {
-  display: grid;
-  justify-items: center;
-}
+.overlay { display: grid; justify-items: center; }
 
 :deep(.slidev-code) {
   code { font-size: 1.1rem; line-height: 1.2; }
@@ -1163,8 +1149,6 @@ type QuestionFormatBridge =
 }
 </style>
 
----
-transition: slide-left
 ---
 
 <h1 class="text-5xl">Bridge は巨大リアクティブオブジェクト</h1>
@@ -1504,10 +1488,7 @@ const hydrate = (/** ... */) => {
 ol { font-size: 1.4rem; }
 
 :deep(.slidev-code) {
-  code {
-    font-size: 1.1rem;
-    line-height: 1.1;
-  }
+  code { font-size: 1.1rem; line-height: 1.1; }
 }
 </style>
 
@@ -1654,13 +1635,9 @@ transition: slide-up
   margin-top: 0.5rem;
 }
 
-.image-label.visible {
-  opacity: 1;
-}
+.image-label.visible { opacity: 1; }
 
-.image-label.hidden {
-  opacity: 0.3;
-}
+.image-label.hidden { opacity: 0.3; }
 
 </style>
 
