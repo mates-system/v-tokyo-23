@@ -68,7 +68,6 @@ transition: slide-up
   src="/mates-on-japanese-companies-using-vuejs.png"
   alt="[https://github.com/chibivue-land/japanese-companies-using-vuejs に株式会社メイツが載っているスクショ]"
   class="flex items-center mx-auto screen-shot-embed"
-  v-click
 />
 
 <div
