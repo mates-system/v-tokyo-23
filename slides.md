@@ -1230,7 +1230,7 @@ transition: slide-up
 
 ````md magic-move
 ```ts
-const real: document.getElementById(hydrationId);
+const real = document.getElementById(hydrationId);
 ```
 
 ```ts
