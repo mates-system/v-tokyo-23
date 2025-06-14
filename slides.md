@@ -4,11 +4,23 @@ title: インタラクティブな ICT 教材の実装に DSL で立ち向かう
 info: |
   ## インタラクティブな ICT 教材の実装に DSL で立ち向かう
   「Vue.js の活用事例特集」
+favicon: /mates-logo.png
 transition: slide-left
 fonts:
   sans: Noto Sans JP
   mono: Input Mono, monospace
 theme: ./theme
+seoMeta:
+  ogTitle: インタラクティブな ICT 教材の実装に DSL で立ち向かう
+  ogDescription: 株式会社メイツの ICT 教材開発の課題に DSL で立ち向かった話です。
+  ogImage: https://mates-system.github.io/v-tokyo-23/og.png
+  ogUrl: https://mates-system.github.io/v-tokyo-23/
+  twitterCard: summary_large_image
+  twitterTitle: インタラクティブな ICT 教材の実装に DSL で立ち向かう
+  twitterDescription: 株式会社メイツの ICT 教材開発の課題に DSL で立ち向かった話です。
+  twitterImage: https://mates-system.github.io/v-tokyo-23/og.png
+  twitterSite: naitokosuke
+  twitterUrl: https://mates-system.github.io/v-tokyo-23/
 ---
 
 <h1>
