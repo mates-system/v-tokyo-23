@@ -1,5 +1,4 @@
 ---
-background: https://cover.sli.dev
 title: インタラクティブな ICT 教材の実装に DSL で立ち向かう
 info: |
   ## インタラクティブな ICT 教材の実装に DSL で立ち向かう
