@@ -41,6 +41,8 @@ h1 {
   font-size: 6rem !important;
   font-weight: 1000;
   line-height: 1.25;
+  text-align: center;
+  width: 100%;
 
   span { color: white; }
 
