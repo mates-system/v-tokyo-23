@@ -1,11 +1,9 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# インタラクティブな ICT 教材の実装に DSL で立ち向かう
 
-To start the slide show:
+2025/06/13(金) [v-tokyo #23](https://vuejs-meetup.connpass.com/event/355473/) の登壇資料です。
 
-- `pnpm install`
-- `pnpm dev`
-- visit <http://localhost:3030>
+スライドはこちらで公開しています。
 
-Edit the [slides.md](./slides.md) to see the changes.
+https://mates-system.github.io/v-tokyo-23/
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+made with [Slidev](https://sli.dev/)
